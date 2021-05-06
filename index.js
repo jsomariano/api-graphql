@@ -1,21 +1,23 @@
-const { ApolloServer, gql } = require('apollo-server')
+import { ApolloServer, gql } from 'apollo-server'
 
-const usuarios = [{
-    id: 1,
-    nome: "Joao Silva",
-    email: "jsilva@zemail.com",
-    idade: 22
-}, {
-    id: 2,
-    nome: "Maria da silva",
-    email: "Msilva@zemail.com",
-    idade: 23
-}, {
-    id: 3,
-    nome: "Jose Silva",
-    email: "josilva@zemail.com",
-    idade: 44
-}]
+const usuarios = [
+    {
+        id: 1,
+        nome: "Joao Silva",
+        email: "jsilva@zemail.com",
+        idade: 22
+    }, {
+        id: 2,
+        nome: "Maria da silva",
+        email: "Msilva@zemail.com",
+        idade: 23
+    }, {
+        id: 3,
+        nome: "Jose Silva",
+        email: "josilva@zemail.com",
+        idade: 44
+    }
+]
 
 const typeDefs = gql`
     scalar Date
@@ -43,9 +45,7 @@ const typeDefs = gql`
         produto_em_destaque: Produto
         numeros_mega_sena: [Int!]!
         usuarios: [Usuario]
-    }
-
-    `
+    }`
 
 const resolvers = {
     Usuario: {
