@@ -7,7 +7,7 @@
   "author": "Junior Santos",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon --exec babel-node index.js"
+    "start": "nodemon --exec babel-node index.js --ext js,graphql"
   },
   "dependencies": {
     "@babel/cli": "7.13.16",
@@ -15,7 +15,8 @@
     "@babel/node": "7.13.13",
     "@babel/preset-env": "7.14.1",
     "apollo-server": "2.24.0",
-    "graphql": "15.5.0"
+    "graphql": "15.5.0",
+    "graphql-import": "1.0.2"    
   },
   "devDependencies": {
     "@babel/eslint-parser": "7.13.14",
