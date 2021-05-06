@@ -12,4 +12,6 @@ Para iniciar o projeto basta seguir os seguintes comandos:
 
 2. Agora se tudo ocorreu bem ja pode iniciar o projeto executando o comando:
 
-- ```yarn start ``` ou ```npm start ```
+- ```yarn start``` ou ```npm start```
+
+
