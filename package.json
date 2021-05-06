@@ -7,8 +7,7 @@
   "author": "Junior Santos",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon --exec babel-node index.js",
-    "prepare": "husky install"
+    "start": "nodemon --exec babel-node index.js"
   },
   "dependencies": {
     "@babel/cli": "7.13.16",
@@ -21,7 +20,6 @@
   "devDependencies": {
     "@babel/eslint-parser": "7.13.14",
     "@babel/eslint-plugin": "7.13.16",
-    "eslint": "^7.25.0",
-    "husky": "^6.0.0"
+    "eslint": "7.25.0"
   }
 }
