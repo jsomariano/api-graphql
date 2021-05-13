@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "start": "nodemon --exec babel-node index.js --ext js,graphql",
-    "lint": "eslint --fix --ext .js,.jsx ."
+    "lint": "eslint --fix --ext .js ."
   },
   "dependencies": {
     "@babel/cli": "7.13.16",
