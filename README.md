@@ -6,13 +6,29 @@ Criação de projeto utilizando o framework GraphQL, o intuito do curso é apren
 
 Para iniciar o projeto basta seguir os seguintes comandos:
 
-1. Primeiramente faça a instalação das dependências:
+**Instalar depedências:**
 
- - ```$ yarn``` ou  ```$ npm install```
+```
+$ yarn
+``` 
+ou  
+ 
+```
+$ npm install
+```
 
-2. Agora se tudo ocorreu bem ja pode iniciar o projeto executando o comando:
+**Iniciando projeto:**
 
-- ```$ yarn start``` ou ```$ npm start```
+```
+$ yarn start
+``` 
+ou 
+
+```
+$ npm start
+```
+
+**Para executar as querys, basta acessar o endereço http://localhost:4000/**
 
 # Exemplos
 
