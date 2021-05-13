@@ -1,11 +1,8 @@
-import { perfis } from '../data/db'
+import { perfis } from '../data/db';
 
 module.exports = {
-    salario(usuario) {
-        return usuario.salario_real
-    },
     perfil(usuario) {
-        const selecionado = perfis.find(({ id }) => id === usuario.perfil_id)
-        return selecionado
-    }
-}
+        const selecionado = perfis.find(({ id }) => id === usuario.perfil_id);
+        return selecionado;
+    },
+};

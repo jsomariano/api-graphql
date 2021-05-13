@@ -1,9 +1,9 @@
-import Query from './Query'
-import Produto from './Produto'
-import Usuario from './Usuario'
+import Query from './Query';
+import Usuario from './Usuario';
+import Mutation from './Mutation';
 
 module.exports = {
     Query,
-    Produto,
-    Usuario
-}
+    Mutation,
+    Usuario,
+};
