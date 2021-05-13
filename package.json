@@ -7,7 +7,8 @@
   "author": "Junior Santos",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon --exec babel-node index.js --ext js,graphql"
+    "start": "nodemon --exec babel-node index.js --ext js,graphql",
+    "lint": "eslint --fix --ext .js ."
   },
   "dependencies": {
     "@babel/cli": "7.13.16",
@@ -16,11 +17,14 @@
     "@babel/preset-env": "7.14.1",
     "apollo-server": "2.24.0",
     "graphql": "15.5.0",
-    "graphql-import": "1.0.2"    
+    "graphql-import": "1.0.2"
   },
   "devDependencies": {
     "@babel/eslint-parser": "7.13.14",
     "@babel/eslint-plugin": "7.13.16",
-    "eslint": "7.25.0"
+    "eslint": "7.2.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-plugin-import": "2.22.1"
   }
 }

@@ -1,15 +1,14 @@
-import { ApolloServer } from 'apollo-server'
-import { importSchema } from "graphql-import"
-import resolvers from './resolvers'
+import { ApolloServer } from 'apollo-server';
+import { importSchema } from 'graphql-import';
+import resolvers from './resolvers';
 
-const schemaPath = './schema/index.graphql'
+const schemaPath = './schema/index.graphql';
 
 const server = new ApolloServer({
     typeDefs: importSchema(schemaPath),
-    resolvers
-})
+    resolvers,
+});
 
 server.listen().then(({ url }) => {
-    console.log(`Executando em ${url}`)
-})
-
+    console.log(`Executando em ${url}`);
+});
