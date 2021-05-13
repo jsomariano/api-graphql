@@ -19,7 +19,7 @@ Para iniciar o projeto basta seguir os seguintes comandos:
 **Query**
 
 Criando query para consultar usuario:
-```
+```gql
 query {
     usuario(id: 1) {
         id
@@ -99,7 +99,7 @@ Resposta:
 **Mutation**
 
 Criando usuario usando Mutation:
-```
+```gql
 mutation {
     novoUsuario(
     	nome: "Ana"
@@ -129,7 +129,7 @@ Resposta:
 ```
 
 Excluindo usuario usando Mutation:
-```
+```gql
 mutation {
     excluirUsuario(id: 1) {
         id
@@ -151,7 +151,7 @@ Resposta:
 ```
 
 Editando usuario e usando fragment para trazer atributos da resposta:
-```
+```gql
 fragment usuarioCompleto on Usuario {
     id
     nome
@@ -198,7 +198,7 @@ Resposta:
 **Input**
 
 Usando input para inserir um novo usuario:
-```
+```gql
 fragment usuarioCompleto on Usuario {
     id
     nome
@@ -244,7 +244,7 @@ Resposta:
 ```
 
 Usando input para fazer um filtro por e-mail e excluir um usuario:
-```
+```gql
 mutation {
     excluirUsuario(filtro: { email: "joao@email.com" }) {
         id
@@ -268,7 +268,7 @@ resposta:
 ```
 
 Usando input para fazer um filtro por id e excluir um usuario:
-```
+```gql
 mutation {
     excluirUsuario(filtro: { id: 2 }) {
         id
@@ -292,7 +292,7 @@ Resposta:
 ```
 
 Usando input para filtro e para alterar usuario
-```
+```gql
 mutation {
     alterarUsuario(
         filtro: { id: 1 }
