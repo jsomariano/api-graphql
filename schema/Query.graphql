@@ -1,10 +1,7 @@
+# Pontos de entrada da sua API!
 type Query {
-    ola: String
-    hora_certa: Date
-    usuario_logado: Usuario
-    numeros_mega_sena: [Int!]!
-    usuarios: [Usuario]        
-    usuario(id: Int): Usuario
-    perfis:[Perfil]
-    perfil(id: Int): Perfil
+    usuarios: [Usuario]
+    usuario(filtro: UsuarioFiltro!): Usuario
+    perfis: [Perfil]
+    perfil(filtro: PerfilFiltro!): Perfil
 }

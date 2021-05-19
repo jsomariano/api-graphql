@@ -1,22 +1,15 @@
-enum UsuarioStatus {
-    ATIVO
-    INATIVO
-    BLOQUEADO
-}
-
 type Usuario {
     id: Int
     nome: String!
     email: String!
-    idade: Int    
-    perfil: Perfil
-    status: UsuarioStatus
+    perfis: [Perfil]
 }
 
 input UsuarioInput {
     nome: String
     email: String
-    idade: Int
+    senha: String
+    perfis: [PerfilFiltro]
 }
 
 input UsuarioFiltro {
@@ -24,3 +17,19 @@ input UsuarioFiltro {
     email: String
 }
 
+type Perfil {
+    id: Int
+    nome: String!
+    rotulo: String!
+    usuarios: [Usuario]
+}
+
+input PerfilInput {
+    nome: String
+    rotulo: String
+}
+
+input PerfilFiltro {
+    id: Int
+    nome: String
+}

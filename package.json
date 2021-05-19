@@ -8,7 +8,12 @@
   "license": "MIT",
   "scripts": {
     "start": "nodemon --exec babel-node index.js --ext js,graphql",
-    "lint": "eslint --fix --ext .js ."
+    "lint": "eslint --fix --ext .js .",
+    "migrate:latest": "knex migrate:latest",
+    "migrate:make": "knex migrate:make",
+    "migrate:rollback": "knex migrate:rollback",
+    "seed:make": "knex seed:make",
+    "seed:run": "knex seed:run"
   },
   "dependencies": {
     "@babel/cli": "7.13.16",
@@ -16,8 +21,11 @@
     "@babel/node": "7.13.13",
     "@babel/preset-env": "7.14.1",
     "apollo-server": "2.24.0",
+    "dotenv": "^9.0.2",
     "graphql": "15.5.0",
-    "graphql-import": "1.0.2"
+    "graphql-import": "1.0.2",
+    "knex": "0.95.5",
+    "mysql2": "2.2.5"
   },
   "devDependencies": {
     "@babel/eslint-parser": "7.13.14",

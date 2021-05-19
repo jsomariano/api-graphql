@@ -1,27 +1,30 @@
 type Mutation {
+    # Virgula opcional
+    # Mutations de Usuario
     novoUsuario(
-       dados: UsuarioInput!
-    ): Usuario
+        dados: UsuarioInput!
+    ): Usuario!
 
     excluirUsuario(
         filtro: UsuarioFiltro!
     ): Usuario
 
     alterarUsuario(
-       filtro: UsuarioFiltro!
-       dados: UsuarioInput!
+        filtro: UsuarioFiltro!
+        dados: UsuarioInput!
     ): Usuario
-    
+
+    # Mutations de Perfil
     novoPerfil(
-       dados: PerfilInput!
-    ): Perfil
+        dados: PerfilInput!
+    ): Perfil!
 
     excluirPerfil(
         filtro: PerfilFiltro!
     ): Perfil
 
     alterarPerfil(
-       filtro: PerfilFiltro!
-       dados: PerfilInput!
+        filtro: PerfilFiltro!
+        dados: PerfilInput!
     ): Perfil
 }
