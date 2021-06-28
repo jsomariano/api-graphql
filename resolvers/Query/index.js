@@ -1,7 +1,7 @@
-import Usuario from './Usuario';
-import Perfil from './Perfil';
+import usuario from './usuario';
+import perfil from './perfil';
 
 module.exports = {
-    ...Usuario,
-    ...Perfil,
+    ...usuario,
+    ...perfil,
 };
