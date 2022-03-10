@@ -1,6 +1,6 @@
 # Introdução
 
-Criação de projeto utilizando o framework GraphQL, o intuito do curso é aprender e conhecer a tecnolôgia.
+Criação de projeto utilizando o framework GraphQL, o intuito do curso é aprender e conhecer a tecnologia.
 
 # Como iniciar o projeto
 
