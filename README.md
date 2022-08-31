@@ -331,7 +331,7 @@ Resposta:
   "data": {
     "alterarUsuario": {
       "id": 1,
-      "nome": "joao silva",
+      "nome": "joao silva costa",
       "email": "joao@email.com.br"
     }
   }
